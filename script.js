@@ -1,20 +1,26 @@
-function checkEvenOdd() {
-    const number = document.getElementById("numberInput").value;
-    const result = document.getElementById("result");
+function checkNumber() {
+  const number = document.getElementById("numberInput").value;
+  const result = document.getElementById("result");
 
-    if (number === "") {
-        result.textContent = "Lütfen bir sayı girin.";
-        return;
-    }
+  if (number === "31") {
+    result.textContent = "Sayı: 31 — SJSJSJSJSJSJ 😂";
+    return;
+  }
 
-    if (isNaN(number)) {
-        result.textContent = "Geçerli bir sayı girin.";
-        return;
-    }
+  if (number === "") {
+    result.textContent = "Lütfen bir sayı girin.";
+    return;
+  }
 
-    if (parseInt(number) % 2 === 0) {
-        result.textContent = number + " bir çift sayıdır.";
-    } else {
-        result.textContent = number + " bir tek sayıdır.";
-    }
+  if (isNaN(number)) {
+    result.textContent = "Geçerli bir sayı girin.";
+    return;
+  }
+
+  const num = parseInt(number);
+  if (num % 2 === 0) {
+    result.textContent = `${num} bir çift sayıdır.`;
+  } else {
+    result.textContent = `${num} bir tek sayıdır.`;
+  }
 }
