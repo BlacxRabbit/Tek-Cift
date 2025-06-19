@@ -2,13 +2,13 @@ function checkNumber() {
   const number = document.getElementById("numberInput").value;
   const result = document.getElementById("result");
 
-  if (number === "31") {
-    result.textContent = "Sayı: 31 — SJSJSJSJSJSJ 😂";
+  if (number === "") {
+    result.textContent = "Lütfen bir sayı girin.";
     return;
   }
 
-  if (number === "") {
-    result.textContent = "Lütfen bir sayı girin.";
+  if (number === "31") {
+    result.textContent = "Sayı: 31 — SJSJSJSJSJSJ 😂";
     return;
   }
 
